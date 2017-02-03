@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="fm-box">
+    <form (ngSubmit)="onsubmit()">
+      <div class="header"> 
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="fm-group">
+        <label>Full Name</label>
+        <input class="fm-control" name="full_name" type="text" [(ngModel)]="signin.full_name" placeholder="Full Name" ng-required="true"/>
+      </div>
+      <div class="fm-group">
+        <label>Email</label>
+        <input class="fm-control" name="email" type="text" [(ngModel)]="signin.email" placeholder="Email Address" ng-required="true"/>
+      </div>
+      <div class="fm-group">
+        <label>Password</label>
+        <input class="fm-control" name="password" type="password" [(ngModel)]="signin.password" placeholder="Password" ng-required="true"/>
+      </div>
+      <div class="fm-group">
+        <button class="button button-primary button-block" type="submit">Sign In</button>
+      </div>
+      <div class="footer"> 
+        <p>Have an account? <a href="#">Log In</a> here.</p>
+      </div>
+    </form>
+  </div>
+</div>
